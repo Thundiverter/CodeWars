@@ -20,9 +20,16 @@ For example, decode("h3 th2r2") would return "hi there".
 For the sake of simplicity, you can assume that any numbers passed into the function will correspond to vowels.
 '''
 
-# Solution
+# Solution #1
 def encode(st):
     return st.replace('a', '1').replace('e', '2').replace('i', '3').replace('o', '4').replace('u', '5')
     
 def decode(st):
     return st.replace('1', 'a').replace('2', 'e').replace('3', 'i').replace('4', 'o').replace('5', 'u')
+
+# Solution #2
+def encode(st):
+    return st.translate(st.maketrans('aeiou', '12345'))
+    
+def decode(st):
+    return st.translate(st.maketrans('12345', 'aeiou'))
