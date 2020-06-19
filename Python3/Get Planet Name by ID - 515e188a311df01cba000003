@@ -1,0 +1,26 @@
+  
+'''
+Kata: https://www.codewars.com/kata/515e188a311df01cba000003
+My profile: https://www.codewars.com/users/Thundiverter
+Language: Python
+
+Description:
+The function is not returning the correct values. Can you figure out why?
+
+<code> get_planet_name(3) # should return 'Earth' </code>
+'''
+
+# Solution #1
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+
+def get_planet_name(id):
+    return planets[id - 1]
+
+# Solution #2
+def get_planet_name(id):
+    return {
+            1: 'Mercury', 2: 'Venus',
+            3: 'Earth', 4: 'Mars',
+            5: 'Jupiter', 6: 'Saturn',
+            7: 'Uranus', 8: 'Neptune'
+            }.get(id)
