@@ -19,3 +19,7 @@ def greet(name):
 # Solution #2
 def greet(name): 
     return 'Hello {name}!'.format(name=name.capitalize())
+
+# Solution #3
+def greet(name): 
+    return f'Hello {name.capitalize()}!'
