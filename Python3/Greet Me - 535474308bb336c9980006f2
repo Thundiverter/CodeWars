@@ -1,0 +1,21 @@
+'''
+Kata: https://www.codewars.com/kata/535474308bb336c9980006f2
+My profile: https://www.codewars.com/users/Thundiverter
+Language: Python
+
+Description:
+Write a method that takes one argument as name and then greets that name, capitalized and ends with an exclamation point.
+
+Example:
+
+<code>"riley" --> "Hello Riley!"
+"JACK"  --> "Hello Jack!"</code>
+'''
+
+# Solution #1
+def greet(name):
+    return 'Hello ' + name.capitalize() + '!'
+
+# Solution #2
+def greet(name): 
+    return 'Hello {name}!'.format(name=name.capitalize())
