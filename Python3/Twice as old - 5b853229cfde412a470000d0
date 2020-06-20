@@ -1,0 +1,11 @@
+# [8 kyu] Twice as old
+# Language: Python
+# Kata: https://www.codewars.com/kata/5b853229cfde412a470000d0
+# My CodeWars profile: https://www.codewars.com/users/Thundiverter
+
+# Solution
+def twice_as_old(dad_years_old, son_years_old):
+    res = dad_years_old - (son_years_old)*2
+    if res < 0:
+        res = res * -1
+    return res
