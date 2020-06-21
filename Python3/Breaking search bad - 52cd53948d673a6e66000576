@@ -1,0 +1,12 @@
+# [6 kyu] Breaking search bad
+# Language: Python
+# Kata: https://www.codewars.com/kata/52cd53948d673a6e66000576
+# My CodeWars profile: https://www.codewars.com/users/Thundiverter
+
+# Solution
+def search(titles, term):
+    res = []
+    for i in range(len(titles)):
+        if term.lower() in titles[i].lower():
+            res.append(titles[i])
+    return res
